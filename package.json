@@ -1,0 +1,19 @@
+{
+  "name": "survey-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon server/index.js",
+    "web": "npm --prefix web run dev",
+    "dev": "concurrently \"npm run server\" \"npm run web\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.2.0",
+    "nodemon": "^3.1.10"
+  }
+}
